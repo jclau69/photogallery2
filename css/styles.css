@@ -1,0 +1,16 @@
+header {
+
+  text-align: center;
+}
+
+input {
+
+  margin-top: 2rem;
+  border: solid rgb(220 219 219) 2px;
+  border-radius: 5px;
+  width: 40%;
+  line-height: 3;
+
+
+
+}
