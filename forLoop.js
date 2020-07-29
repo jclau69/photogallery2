@@ -1,5 +1,11 @@
 
 let div = document.querySelector('div');
-let content = <img src = 'photos/thumbnails'>;
+let content = ' ';
+
+
+for(let i = 1; i <= 12; i++) {
+
+  content += `photos/thumbnails/${i}.jpg`;
+}
 
 div.innerHTML = content;
