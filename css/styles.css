@@ -5,12 +5,19 @@ header {
 
 input {
 
-  margin-top: 2rem;
   border: solid rgb(220 219 219) 2px;
   border-radius: 5px;
   width: 40%;
-  line-height: 3;
 
 
+}
+
+div {
+
+  max-width:1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+  grid-gap: 20px;
 
 }
