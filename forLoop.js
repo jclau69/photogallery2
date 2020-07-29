@@ -1,9 +1,10 @@
 
 let div = document.querySelector('div');
 let content = ' ';
-for(let i = 1, i <= 12, i++) {
+let pics;
 
-  content += <div>${i}</div>;
-}
+content = photos/thumbnails;
+
+
 
 div.innerHTML = content;
