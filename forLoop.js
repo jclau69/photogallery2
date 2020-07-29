@@ -1,6 +1,6 @@
 
 let div = document.querySelector('div');
-let content = 'photos/thumbnails';
+let content = <img src = 'photos/thumbnails'>
 
 
 div.innerHTML = content;
