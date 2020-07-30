@@ -25,7 +25,7 @@ input {
 img {
 
 box-shadow: 7px 6px 9px grey;
-
+border-radius: 13px;
 }
 
 ul {
