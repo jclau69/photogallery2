@@ -18,8 +18,8 @@
   <body>
 
     <main>
-      <input type="search" name="search" id="search" placeholder="Search...">
-      
+      <input type="search" name="search" id="search" onkeyup="myFunction()" placeholder="Search...">
+
       <ul id="myUL">
 <li><a href="#">1.jpg
 Hay Bales
@@ -115,6 +115,27 @@ I walked through this meadow of bluebells and got a good view of the snow on the
     <script src="js/baguetteBox.min.js"> </script>
     <script src="js/searchFilter.js" ></script>
     <script src="js/app.js"></script>
+    <script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
 
 
 
