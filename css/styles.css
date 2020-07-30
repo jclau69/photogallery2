@@ -21,3 +21,14 @@ div {
   grid-gap: 20px;
 
 }
+
+img {
+
+box-shadow: 7px 6px 9px grey;
+
+}
+
+ul {
+
+  display: none;
+}
