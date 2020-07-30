@@ -12,7 +12,7 @@ input {
 
 }
 
-div {
+.gallery {
 
   display: grid;
   margin-top: 2rem;
