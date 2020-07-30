@@ -12,7 +12,7 @@ input {
 
 }
 
-div {
+.content {
 
   margin-top: 2rem;
   max-width:1000px;
