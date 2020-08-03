@@ -22,7 +22,6 @@
       <input type="search" name="search" id="search" onkeyup="myFunction()" placeholder="Search...">
 
       <div class ="gallery">
-
         <a href="photos/1.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.
         ">
             <img src="photos/thumbnails/1.jpg" alt="Hay Bales">
@@ -65,6 +64,8 @@
 
 
 
+
+
       </div>
 
   </main>
@@ -74,7 +75,9 @@
     <script src="js/searchFilter.js" ></script>
     <script src="js/app.js"></script>
 
+
     <script>
+
 
 function myFunction() {
   // Declare variables
@@ -85,6 +88,7 @@ function myFunction() {
   li = ul.getElementsByTagName('li');
 
   // Loop through all list items, and hide those who don't match the search query
+
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
@@ -95,6 +99,7 @@ function myFunction() {
     }
   }
 }
+
 </script>
 
 
